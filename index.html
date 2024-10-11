@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breathe Analyser Test</title>
+  <link rel="stylesheet" href="BAstyles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Breathe Analyser Test</h2>
+    <form id="baTestForm" onsubmit="return validateForm()">
+      <label for="cliName">CLI Name:</label>
+      <select id="cliName" name="cliName" required>
+        <option value="" disabled selected>Select CLI Name</option>
+        <option value="CLI1">CLI1</option>
+        <option value="CLI2">CLI2</option>
+        <option value="CLI3">CLI3</option>
+      </select>
+
+      <label for="dateTime">Date and Time:</label>
+      <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+      <label for="lpName">LP Name:</label>
+      <input type="text" id="lpName" name="lpName" required>
+
+      <label for="lpCmsid">LP CMSID:</label>
+      <input type="text" id="lpCmsid" name="lpCmsid" required>
+
+      <label for="alpName">ALP Name:</label>
+      <input type="text" id="alpName" name="alpName" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="trainNo">Train No:</label>
+      <input type="text" id="trainNo" name="trainNo" required>
+
+      <label for="locoNo">Loco No:</label>
+      <input type="text" id="locoNo" name="locoNo" required>
+
+      <label for="lpBaResult">LP BA Result:</label>
+      <input type="text" id="lpBaResult" name="lpBaResult" required>
+
+      <label for="alpBaResult">ALP BA Result:</label>
+      <input type="text" id="alpBaResult" name="alpBaResult" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="BAscript.js"></script>
+</body>
+</html>
