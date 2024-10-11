@@ -4,7 +4,7 @@ function validateForm() {
   const lpName = document.getElementById("lpName").value;
   const lpCmsid = document.getElementById("lpCmsid").value;
   const alpName = document.getElementById("alpName").value;
-    const lpCmsid = document.getElementById("alpCmsid").value;
+ const alpCmsid = document.getElementById("alpCmsid").value;
   const location = document.getElementById("location").value;
   const trainNo = document.getElementById("trainNo").value;
   const locoNo = document.getElementById("locoNo").value;
