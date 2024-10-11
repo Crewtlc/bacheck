@@ -17,7 +17,7 @@ function validateForm() {
   }
   return true;
 }
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxZgTZGTOvlwKT5Es0ZrVNmn5-qtvmlbEZ1IwFzcgpei5wpxbrJizXb7Pyx_SBlMA/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyodCTlAsd3jvSyw51YtcwSFEkz4__Mc4hn7daPdt6mp6KvhkO2lY3_kDnq_Xb27JPz/exec';
 const form = document.forms['baTestForm'];
 const submitButton = form.querySelector('button[type="submit"]');  // Select the submit button
 
