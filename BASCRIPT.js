@@ -18,7 +18,7 @@ function validateForm() {
   return true;
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwjvMys1FNdsT4B5z12crcMNjIuCGuBsPF5w7o4kulq1r1bfl41oaDq-eu6i2cdRysF/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw6drSVRW-sPu-refaOZMMYga-r28wDC077gjxfcXN4yLBbySgQOioCov-uFFPAqk_a/exec';
 const form = document.forms['baTestForm'];
 const submitButton = form.querySelector('button[type="submit"]');
 
