@@ -14,6 +14,7 @@ function validateForm() {
     alert("Please fill out all fields.");
     return false;
   }
+  alert("Form submitted successfully!");
   return true;
 }
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwS_5bcH6JwUFUk6KeWfB20nQHzdpnks1ZOGrXVDQ8kDeFy0yMUFtZFVhd03dYIm04b/exec';
@@ -35,7 +36,7 @@ form.addEventListener('submit', async e => {
     });
 
     if (response.ok) {
-      alert("Your details have been recorded, and you will be relieved soon.");
+      alert("Your details have been recorded, thank you.");
       window.location.reload();  // Reload the page after form submission
     } else {
       throw new Error('Network response was not ok');
