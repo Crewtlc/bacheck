@@ -19,7 +19,7 @@ function validateForm() {
   return true;
 }
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxdxPCdnYsTEMuIXg77wDL03CCtmw72HoTMvOly59eMvNme4-Q9QCqaseinUnuWnZ6z/exec';
-const form = document.forms['mobileCheckForm'];
+const form = document.forms['baTestForm'];
 const submitButton = form.querySelector('button[type="submit"]');  // Select the submit button
 
 form.addEventListener('submit', async e => {
