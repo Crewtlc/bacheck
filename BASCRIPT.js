@@ -14,9 +14,7 @@ function validateForm() {
     alert("Please fill out all fields.");
     return false;
   }
-  alert("Form submitted successfully!");
-  return true;
-}
+ 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwS_5bcH6JwUFUk6KeWfB20nQHzdpnks1ZOGrXVDQ8kDeFy0yMUFtZFVhd03dYIm04b/exec';
 const form = document.forms['baTestForm'];
 const submitButton = form.querySelector('button[type="submit"]');  // Select the submit button
