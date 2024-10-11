@@ -17,14 +17,18 @@ function validateForm() {
   }
   return true;
 }
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwjvMys1FNdsT4B5z12crcMNjIuCGuBsPF5w7o4kulq1r1bfl41oaDq-eu6i2cdRysF/exec';
 const form = document.forms['baTestForm'];
-const submitButton = form.querySelector('button[type="submit"]');  // Select the submit button
+const submitButton = form.querySelector('button[type="submit"]');
 
 form.addEventListener('submit', async e => {
-  e.preventDefault();  // Prevent the default form submission
+  e.preventDefault();
 
-  // Disable the submit button to prevent multiple submissions
+  if (!validateForm()) {
+    return;
+  }
+
   submitButton.disabled = true;
   submitButton.textContent = "Submitting...";
 
@@ -37,7 +41,7 @@ form.addEventListener('submit', async e => {
 
     if (response.ok) {
       alert("Your details have been recorded, thank you.");
-      window.location.reload();  // Reload the page after form submission
+      window.location.reload();
     } else {
       throw new Error('Network response was not ok');
     }
@@ -45,7 +49,6 @@ form.addEventListener('submit', async e => {
     console.error('Error!', error.message);
     alert("An error occurred during form submission. Please try again.");
   } finally {
-    // Re-enable the submit button after submission is complete
     submitButton.disabled = false;
     submitButton.textContent = "Submit";
   }
